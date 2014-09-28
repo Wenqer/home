@@ -10,10 +10,16 @@ module.exports = {
 
   modules: [
     'main',
-    'volume'
+    'volume',
+    'light'
   ],
 
   bodyParser: {
     'limit': '20mb'
+  },
+
+  hue: {
+    host: '192.168.1.142',
+    user: '175badea3beb54f713dd90563833b213'
   }
 }
