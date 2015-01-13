@@ -88,11 +88,11 @@ function setActive(req, res) {
   api
     .setGroupLightState(1, state)
     .then(function(result) {
-      res.json(result)
+      res && res.json(result)
     })
     .fail(function(err) {
       console.error(err)
-      res.json(err)
+      res && res.json(err)
     })
     .done()
 }
@@ -114,6 +114,8 @@ function setOff(req, res) {
     })
     .done()
 }
+
+setActive()
 
 module.exports = function setup (app) {
   app.get('/light', index)
