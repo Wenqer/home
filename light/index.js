@@ -20,6 +20,7 @@ function index(req, res) {
       res.json(result)
     })
     .fail(function(err) {
+      console.error(err)
       res.json(err)
     })
     .done()
@@ -70,6 +71,7 @@ function setBrightness(req, res) {
       res.json(result)
     })
     .fail(function(err) {
+      console.error(err)
       res.json(err)
     })
     .done()
@@ -89,6 +91,7 @@ function setActive(req, res) {
       res.json(result)
     })
     .fail(function(err) {
+      console.error(err)
       res.json(err)
     })
     .done()
@@ -106,6 +109,7 @@ function setOff(req, res) {
       res.json(result)
     })
     .fail(function(err) {
+      console.error(err)
       res.json(err)
     })
     .done()

@@ -10,7 +10,7 @@
     "body-parser": "~1.0.2",
     "express": "~4.3.0",
     "morgan": "~1.1.1",
-    "node-hue-api": "^0.2.3",
+    "node-hue-api": "^0.2.7",
     "request": "~2.34.0"
   }
 }
