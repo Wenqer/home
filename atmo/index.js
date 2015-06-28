@@ -42,7 +42,7 @@ function measure(req, res) {
 }
 
 measure().then(report)
-setInterval(() => measure().then(report), min(5))
+setInterval(() => measure().then(report).catch(report), min(5))
 
 function CO2(req, res) {
   measure()
